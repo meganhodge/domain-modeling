@@ -32,18 +32,18 @@ class Person {
     }
     
     func toString() {
-        print("First Name: " + firstName)
-        print("Last Name: " + lastName)
-        print("Age: " + String(age))
+        print("First Name: " + firstName, terminator: "")
+        print("Last Name: " + lastName, terminator: "")
+        print("Age: " + String(age), terminator: "")
         if job != nil {
-            print("Job: " + job!.title)
+            print("Job: " + job!.title, terminator: "")
         } else {
-            print("Job: currently looking for one...")
+            print("Job: currently looking for one...", terminator: "")
         }
         if spouse != nil {
-            print("Spouse: " + spouse!.firstName + " " + spouse!.lastName)
+            print("Spouse: " + spouse!.firstName + " " + spouse!.lastName, terminator: "")
         } else {
-            print("Spouse: woohoo I'm single")
+            print("Spouse: woohoo I'm single", terminator: "")
         }
     }
 }

@@ -52,4 +52,14 @@ struct Money {
         moneySum.amount += money2.amount
         return moneySum
     }
+    
+    // takes two money objects
+    // converts money1's amount into money2's currency
+    // subtracts the currencies in a new money object and returns it
+    func sub(money2: Money) -> Money {
+        var moneySum = Money(amount: Double(), currency: String())
+        moneySum = self.convert(money2.currency)
+        moneySum.amount -= money2.amount
+        return moneySum
+    }
 }

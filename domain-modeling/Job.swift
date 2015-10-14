@@ -9,10 +9,11 @@
 import Foundation
 
 class Job {
+    // takes in the title, salaryType (can be either perYear or perHour), and salaryAmount
     var title: String
     var salary: Salary
     
-    enum Salary: Double {
+    enum Salary {
         case PerYear(Double)
         case PerHour(Double)
     }
@@ -23,13 +24,16 @@ class Job {
     }
     
     func calculateIncome(hoursWorked: Double) -> Double {
-        if (Salary.PerYear == salary) {
-            return salary
-        } else {
-            return hoursWorked * salary
+        switch salary {
+            case .PerHour(let amount): return amount * hoursWorked
+            case .PerYear(let amount): return amount
+        }
     }
     
     func raise(raise: Double) -> Double{
-        return salary.rawValue * raise * 100.00
+        switch salary {
+            case .PerYear(let amount): return (amount * (raise / 100)) + amount
+            case .PerHour(let amount): return (amount * (raise / 100)) + amount
+        }
     }
 }

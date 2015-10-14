@@ -100,6 +100,8 @@
 		9D68C9ED1BCDE9A60000D6A4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Megan Hodge";
 				TargetAttributes = {
@@ -252,6 +254,7 @@
 				9D68C9FE1BCDE9A60000D6A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

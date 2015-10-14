@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "CEDAE867D16B32DBEE248651A30A750B8C624AB3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6EB6BED1E48801071B35AAE5751CC8CED0A17513" : 0,
+    "CEDAE867D16B32DBEE248651A30A750B8C624AB3" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "219CE679-5BEA-4BD9-B82A-3AF987021E6D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6EB6BED1E48801071B35AAE5751CC8CED0A17513" : "",
+    "CEDAE867D16B32DBEE248651A30A750B8C624AB3" : "domain-modeling\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "domain-modeling",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "domain-modeling.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/meganhodge\/homework3.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6EB6BED1E48801071B35AAE5751CC8CED0A17513"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/meganhodge\/domain-modeling.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CEDAE867D16B32DBEE248651A30A750B8C624AB3"
+    }
+  ]
+}
