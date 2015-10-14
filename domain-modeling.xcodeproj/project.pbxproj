@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		9D68C9F91BCDE9A60000D6A4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68C9F81BCDE9A60000D6A4 /* main.swift */; };
+		9D68CA001BCDFDC00000D6A4 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68C9FF1BCDFDC00000D6A4 /* Money.swift */; };
+		9D68CA021BCDFDCF0000D6A4 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68CA011BCDFDCF0000D6A4 /* Job.swift */; };
+		9D68CA041BCDFDD80000D6A4 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68CA031BCDFDD80000D6A4 /* Person.swift */; };
+		9D68CA061BCDFDE10000D6A4 /* Family.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68CA051BCDFDE10000D6A4 /* Family.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,10 @@
 /* Begin PBXFileReference section */
 		9D68C9F51BCDE9A60000D6A4 /* domain-modeling */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "domain-modeling"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D68C9F81BCDE9A60000D6A4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9D68C9FF1BCDFDC00000D6A4 /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
+		9D68CA011BCDFDCF0000D6A4 /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		9D68CA031BCDFDD80000D6A4 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		9D68CA051BCDFDE10000D6A4 /* Family.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Family.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,10 @@
 			isa = PBXGroup;
 			children = (
 				9D68C9F81BCDE9A60000D6A4 /* main.swift */,
+				9D68C9FF1BCDFDC00000D6A4 /* Money.swift */,
+				9D68CA011BCDFDCF0000D6A4 /* Job.swift */,
+				9D68CA031BCDFDD80000D6A4 /* Person.swift */,
+				9D68CA051BCDFDE10000D6A4 /* Family.swift */,
 			);
 			path = "domain-modeling";
 			sourceTree = "<group>";
@@ -118,6 +130,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D68CA061BCDFDE10000D6A4 /* Family.swift in Sources */,
+				9D68CA001BCDFDC00000D6A4 /* Money.swift in Sources */,
+				9D68CA021BCDFDCF0000D6A4 /* Job.swift in Sources */,
+				9D68CA041BCDFDD80000D6A4 /* Person.swift in Sources */,
 				9D68C9F91BCDE9A60000D6A4 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
