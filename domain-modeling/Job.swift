@@ -23,6 +23,8 @@ class Job {
         self.salary = salary
     }
     
+    // calculate the income based off of hourly or yearly pay
+    // if they are yearly then their salary is returned and if they are hourly then their income is calculated using their salary amount times their hours worked
     func calculateIncome(hoursWorked: Double) -> Double {
         switch salary {
             case .PerHour(let amount): return amount * hoursWorked
@@ -30,6 +32,8 @@ class Job {
         }
     }
     
+    // the raise passed in is assumed to be a percent (ex. 10 is 10%) so this converts raise into a decimal
+    // it returns the new salary with the raise so it adds the raise to the salary to return that amount
     func raise(raise: Double) -> Double{
         switch salary {
             case .PerYear(let amount): return (amount * (raise / 100)) + amount

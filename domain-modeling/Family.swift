@@ -16,6 +16,7 @@ class Family {
     }
     
     // calculates the total income by taking the hours worked and applying them to any family member who is hourly and then
+    // totalIncome starts at 0 because they might not have any income
     func householdIncome(hoursWorked: Double) -> Double {
         var totalIncome: Double = 0.0
         for member in members {
