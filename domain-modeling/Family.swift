@@ -14,15 +14,6 @@ class Family : CustomStringConvertible {
         return ("\(members.description)")
     }
     
-//    var description: String {
-//        var stringOfMembers = "["
-//        for member in members {
-//            stringOfMembers.appendContentsOf(member.description + ", ")
-//        }
-//        return (stringOfMembers + "]")
-//    }
-
-    
     init(members: [Person]) {
         self.members = members
     }
