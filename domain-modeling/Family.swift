@@ -45,7 +45,7 @@ class Family : CustomStringConvertible {
     func haveChild() -> [Person]{
         for member in members {
             if member.age > 21 {
-                members.append(Person(firstName: String(), lastName: String(), age: 0, job: nil, spouse: nil))
+                members.append(Person(firstName: "wittle", lastName: "baby", age: 0, job: nil, spouse: nil))
                 return members
             }
         }

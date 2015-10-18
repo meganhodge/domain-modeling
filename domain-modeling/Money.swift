@@ -9,7 +9,8 @@
 import Foundation
 
 protocol Mathematics {
-    
+    func add(money: Money) -> Money
+    func sub(money: Money) -> Money
 }
 
 struct Money : CustomStringConvertible {
@@ -62,7 +63,6 @@ struct Money : CustomStringConvertible {
         }
         return convertedMoney
     }
-
     
     // takes two money objects
     // converts money1's amount into money2's currency
