@@ -8,10 +8,13 @@
 
 import Foundation
 
-class Job {
+class Job : CustomStringConvertible {
     // takes in the title, salaryType (can be either perYear or perHour), and salaryAmount
     var title: String
     var salary: Salary
+    var description: String {
+        return ("\(title)\(salary)")
+    }
     
     enum Salary {
         case PerYear(Double)
@@ -32,12 +35,12 @@ class Job {
         }
     }
     
-    // the raise passed in is assumed to be a percent (ex. 10 is 10%) so this converts raise into a decimal
+    // the raise passed in is assumed to be a percent (ex. .10 is 10%)
     // it returns the new salary with the raise so it adds the raise to the salary to return that amount
     func raise(raise: Double) -> Double{
         switch salary {
-            case .PerYear(let amount): return (amount * (raise / 100)) + amount
-            case .PerHour(let amount): return (amount * (raise / 100)) + amount
+            case .PerYear(let amount): return (amount * raise) + amount
+            case .PerHour(let amount): return (amount * raise) + amount
         }
     }
 }

@@ -1,6 +1,6 @@
 //
 //  Money.swift
-//  domain-modeling
+//  domain-modeling   5
 //
 //  Created by iGuest on 10/13/15.
 //  Copyright (c) 2015 Megan Hodge. All rights reserved.
@@ -8,9 +8,16 @@
 
 import Foundation
 
-struct Money {
+protocol Mathematics {
+    
+}
+
+struct Money : CustomStringConvertible {
     var amount : Double
     var currency : String
+    var description: String {
+        return ("\(currency)\(amount)")
+    }
     
     // returns a money object with the converted amount using the newCurrency
     // if the conversion is not between USD, GBP, EUR, CAN then we return the money object with the original currency and amount (if the conversion cannot be done then we send back a money object with currency1 and the original amount)

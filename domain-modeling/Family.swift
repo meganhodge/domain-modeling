@@ -8,8 +8,20 @@
 
 import Foundation
 
-class Family {
+class Family : CustomStringConvertible {
     var members: [Person]
+    var description: String {
+        return ("\(members.description)")
+    }
+    
+//    var description: String {
+//        var stringOfMembers = "["
+//        for member in members {
+//            stringOfMembers.appendContentsOf(member.description + ", ")
+//        }
+//        return (stringOfMembers + "]")
+//    }
+
     
     init(members: [Person]) {
         self.members = members

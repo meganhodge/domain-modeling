@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		440CD3311BD40F4300F8A93F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CD3301BD40F4300F8A93F /* Extension.swift */; settings = {ASSET_TAGS = (); }; };
 		9D68C9F91BCDE9A60000D6A4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68C9F81BCDE9A60000D6A4 /* main.swift */; };
 		9D68CA001BCDFDC00000D6A4 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68C9FF1BCDFDC00000D6A4 /* Money.swift */; };
 		9D68CA021BCDFDCF0000D6A4 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68CA011BCDFDCF0000D6A4 /* Job.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		440CD3301BD40F4300F8A93F /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		9D68C9F51BCDE9A60000D6A4 /* domain-modeling */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "domain-modeling"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D68C9F81BCDE9A60000D6A4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9D68C9FF1BCDFDC00000D6A4 /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				9D68C9F81BCDE9A60000D6A4 /* main.swift */,
+				440CD3301BD40F4300F8A93F /* Extension.swift */,
 				9D68C9FF1BCDFDC00000D6A4 /* Money.swift */,
 				9D68CA011BCDFDCF0000D6A4 /* Job.swift */,
 				9D68CA031BCDFDD80000D6A4 /* Person.swift */,
@@ -102,7 +105,7 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Megan Hodge";
 				TargetAttributes = {
 					9D68C9F41BCDE9A60000D6A4 = {
@@ -135,6 +138,7 @@
 				9D68CA061BCDFDE10000D6A4 /* Family.swift in Sources */,
 				9D68CA001BCDFDC00000D6A4 /* Money.swift in Sources */,
 				9D68CA021BCDFDCF0000D6A4 /* Job.swift in Sources */,
+				440CD3311BD40F4300F8A93F /* Extension.swift in Sources */,
 				9D68CA041BCDFDD80000D6A4 /* Person.swift in Sources */,
 				9D68C9F91BCDE9A60000D6A4 /* main.swift in Sources */,
 			);
@@ -163,6 +167,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;

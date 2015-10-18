@@ -8,12 +8,15 @@
 
 import Foundation
 
-class Person {
+class Person: CustomStringConvertible {
     var firstName : String
     var lastName : String
     var age : Int
     var job : Job?
     var spouse : Person?
+    var description: String {
+        return String(self.toString())
+    }
     
     // if the person is over 16 then they can have a job
     // if the person is over 18 then they can have a spouse
@@ -36,18 +39,19 @@ class Person {
     
     // prints the first name, last name, age, job title (if applicable), and spouse first and last name (if applicable)
     func toString() {
-        print("First Name: " + firstName)
-        print("Last Name: " + lastName)
-        print("Age: " + String(age))
+        var jobString : String
+        var spouseString : String
+        
         if job != nil {
-            print("Job: " + job!.title)
+            jobString = "Job: " + job!.title
         } else {
-            print("Job: currently looking for one...")
+            jobString = "Job: currently looking for one..."
         }
         if spouse != nil {
-            print("Spouse: " + spouse!.firstName + " " + spouse!.lastName)
+            spouseString = "Spouse: " + spouse!.firstName + " " + spouse!.lastName
         } else {
-            print("Spouse: woohoo I'm single")
+            spouseString = "Spouse: woohoo I'm single"
         }
+        print("First Name: \(firstName) Last Name: \(lastName) Age: \(String(age)) \(jobString) \(spouseString)")
     }
 }
