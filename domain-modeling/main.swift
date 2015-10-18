@@ -62,6 +62,6 @@ print(family.description)
 print("Extension tests")
 print(1.0.GBP)
 // Convert using extension
-print(299.9.USD.convert("EUR")) // converts to USD to EUR
-print(53.8.EUR.sub(53.8.EUR)) // subtracts two EUR Moneys
+print(100.USD.convert("GBP")) // converts to USD to EUR
+print(53.8.EUR.sub(53.8.EUR)) // subtracts two EUR Moneys for 0.0 EUR
 print(53.8.EUR)
