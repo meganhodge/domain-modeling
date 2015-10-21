@@ -61,11 +61,7 @@ print(family.description)
 // Extension Test
 print("Extension tests")
 print(1.0.GBP)
-print(53.8.EUR)
 // Convert using extension
 print(100.USD.convert("GBP")) // converts to USD to EUR
-// Math protocol (because of how I did the previous homework, I believe this is doing the exact same thing)
-print("Mathematics Protocol")
 print(53.8.EUR.sub(53.8.EUR)) // subtracts two EUR Moneys for 0.0 EUR
-print(53.8.GBP.add(2.USD)) // adds 53.8GBP (107.6 USD) to 2USD for 109.6USD
-
+print(53.8.EUR)
